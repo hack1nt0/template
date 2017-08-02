@@ -1,14 +1,14 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.LongReversableCollection;
-import egork.generated.collections.comparator.LongComparator;
-import egork.generated.collections.iterator.LongIterator;
-import egork.generated.collections.function.IntToLongFunction;
-import egork.generated.collections.function.LongCharPredicate;
-import egork.generated.collections.function.LongDoublePredicate;
-import egork.generated.collections.function.LongFilter;
-import egork.generated.collections.function.LongIntPredicate;
-import egork.generated.collections.function.LongLongPredicate;
+import template.egork.generated.collections.LongReversableCollection;
+import template.egork.generated.collections.comparator.LongComparator;
+import template.egork.generated.collections.iterator.LongIterator;
+import template.egork.generated.collections.function.IntToLongFunction;
+import template.egork.generated.collections.function.LongCharPredicate;
+import template.egork.generated.collections.function.LongDoublePredicate;
+import template.egork.generated.collections.function.LongFilter;
+import template.egork.generated.collections.function.LongIntPredicate;
+import template.egork.generated.collections.function.LongLongPredicate;
 
 /**
  * @author Egor Kulikov
@@ -442,7 +442,7 @@ public interface LongList extends LongReversableCollection {
 
             {
                 if (from < 0 || from > to || to > LongList.this.size()) {
-                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", size = " + size());
+                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", capacity = " + size());
                 }
                 shift = from;
                 size = to - from;
@@ -454,7 +454,7 @@ public interface LongList extends LongReversableCollection {
 
             public long get(int at) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 return LongList.this.get(at + shift);
             }
@@ -469,7 +469,7 @@ public interface LongList extends LongReversableCollection {
 
             public void set(int at, long value) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 LongList.this.set(at + shift, value);
             }

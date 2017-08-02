@@ -1,4 +1,4 @@
-package egork.numbers;
+package template.egork.numbers;
 
 import java.util.Arrays;
 

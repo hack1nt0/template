@@ -1,4 +1,4 @@
-package egork.geometry;
+package template.egork.geometry;
 
 /**
  * @author egorku@yandex-team.ru

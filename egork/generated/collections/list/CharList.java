@@ -1,14 +1,14 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.function.CharFilter;
-import egork.generated.collections.function.IntToCharFunction;
-import egork.generated.collections.CharReversableCollection;
-import egork.generated.collections.comparator.CharComparator;
-import egork.generated.collections.function.CharCharPredicate;
-import egork.generated.collections.function.CharDoublePredicate;
-import egork.generated.collections.function.CharIntPredicate;
-import egork.generated.collections.function.CharLongPredicate;
-import egork.generated.collections.iterator.CharIterator;
+import template.egork.generated.collections.function.CharFilter;
+import template.egork.generated.collections.function.IntToCharFunction;
+import template.egork.generated.collections.CharReversableCollection;
+import template.egork.generated.collections.comparator.CharComparator;
+import template.egork.generated.collections.function.CharCharPredicate;
+import template.egork.generated.collections.function.CharDoublePredicate;
+import template.egork.generated.collections.function.CharIntPredicate;
+import template.egork.generated.collections.function.CharLongPredicate;
+import template.egork.generated.collections.iterator.CharIterator;
 
 /**
  * @author Egor Kulikov
@@ -442,7 +442,7 @@ public interface CharList extends CharReversableCollection {
 
             {
                 if (from < 0 || from > to || to > CharList.this.size()) {
-                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", size = " + size());
+                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", capacity = " + size());
                 }
                 shift = from;
                 size = to - from;
@@ -454,7 +454,7 @@ public interface CharList extends CharReversableCollection {
 
             public char get(int at) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 return CharList.this.get(at + shift);
             }
@@ -469,7 +469,7 @@ public interface CharList extends CharReversableCollection {
 
             public void set(int at, char value) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 CharList.this.set(at + shift, value);
             }

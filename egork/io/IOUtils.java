@@ -1,9 +1,9 @@
-package egork.io;
+package template.egork.io;
 
-import egork.generated.collections.pair.IntIntPair;
-import egork.generated.collections.pair.LongLongPair;
-import egork.utils.io.InputReader;
-import egork.utils.io.OutputWriter;
+import template.egork.generated.collections.pair.IntIntPair;
+import template.egork.generated.collections.pair.LongLongPair;
+import template.egork.utils.io.InputReader;
+import template.egork.utils.io.OutputWriter;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

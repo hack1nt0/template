@@ -1,7 +1,7 @@
-package egork.collections;
+package template.egork.collections;
 
-import egork.collections.function.Function;
-import egork.collections.filter.Filter;
+import template.egork.collections.function.Function;
+import template.egork.collections.filter.Filter;
 
 import java.util.ArrayList;
 import java.util.Collection;

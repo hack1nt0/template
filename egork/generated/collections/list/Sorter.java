@@ -1,9 +1,9 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.comparator.CharComparator;
-import egork.generated.collections.comparator.DoubleComparator;
-import egork.generated.collections.comparator.IntComparator;
-import egork.generated.collections.comparator.LongComparator;
+import template.egork.generated.collections.comparator.CharComparator;
+import template.egork.generated.collections.comparator.DoubleComparator;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.generated.collections.comparator.LongComparator;
 
 public class Sorter {
     private static final int INSERTION_THRESHOLD = 16;

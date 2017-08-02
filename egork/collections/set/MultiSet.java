@@ -1,6 +1,6 @@
-package egork.collections.set;
+package template.egork.collections.set;
 
-import egork.collections.map.EHashMap;
+import template.egork.collections.map.EHashMap;
 
 import java.util.Iterator;
 import java.util.Map;

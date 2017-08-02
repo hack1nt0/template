@@ -4,10 +4,10 @@ package template.collection.sequence;
  * @author dy[jealousing@gmail.com] on 17-4-29.
  */
 public interface IntArray {
-    public int length();
-    public int get(int i);
+    int length();
+    int get(int i);
 
-    public static IntArray from(int[] xs) {
+    static IntArray from(int[] xs) {
         return new IntArray() {
             @Override
             public int length() {
@@ -21,7 +21,7 @@ public interface IntArray {
         };
     }
 
-    public static IntArray from(int[] xs, int from, int to) {
+    static IntArray from(int[] xs, int from, int to) {
         return new IntArray() {
             @Override
             public int length() {
@@ -35,7 +35,7 @@ public interface IntArray {
         };
     }
 
-    public static IntArray from(CharSequence charSequence) {
+    static IntArray from(CharSequence charSequence) {
         return new IntArray() {
             int[] codes = charSequence.codePoints().toArray();
             @Override

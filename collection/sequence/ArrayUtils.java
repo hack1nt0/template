@@ -336,6 +336,13 @@ public class ArrayUtils {
         return res;
     }
 
+    public static int minIndex(double[] array) {
+        int index = 0;
+        for (int i = 1; i < array.length; ++i)
+            if (array[i] < array[index]) index = i;
+        return index;
+    }
+
     public static <T extends Comparable<T>> Tuple3<Integer, Integer, T> minIndex(T[][] arr) {
         if (arr == null || arr.length == 0) throw new IllegalArgumentException();
         int I, J; T K;

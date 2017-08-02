@@ -1,6 +1,6 @@
-package egork.string;
+package template.egork.string;
 
-import egork.generated.collections.list.IntList;
+import template.egork.generated.collections.list.IntList;
 
 import java.util.Arrays;
 

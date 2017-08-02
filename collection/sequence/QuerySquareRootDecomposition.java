@@ -12,13 +12,13 @@ import java.util.*;
  *
  * Also known as Mo's Algorithm. It is an offline algorithm, which means the querys must be told ahead.
  *
- * This Algo has complexity of   O(sqrt(n)*max(m,n)), m means the n.o. of queries, and n means the length of queried arr.
- * When m <= n, the compexity is O(sqrt(n)*n).
+ * This Algo has complexity of   O(sqrt(capacity)*max(m,capacity)), m means the capacity.o. of queries, and capacity means the length of queried arr.
+ * When m <= capacity, the compexity is O(sqrt(capacity)*capacity).
  *
  * While not better than IntevalTree, which complexity is O(mlgn), it's complexity is stable.
  * For Example, querying the number of every occurrence elements of from given range, the IntevalTree will
  * maintain from cntMap for each node, so the cost of every query may degenerate to O(wlgn), w means the radical of queried arr. But with QSRT-decom-
- * position, the amortized cost of every query is O(sqrt(n)) because of its offline thing.
+ * position, the amortized cost of every query is O(sqrt(capacity)) because of its offline thing.
  *
  * The key points of QSRT-decomp is Sorting and Amortized Analysis of complexity.
  */

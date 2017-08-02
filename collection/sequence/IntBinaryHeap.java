@@ -91,7 +91,7 @@ public class IntBinaryHeap implements Iterable<Integer> {
 
     }
 
-    // helper function to double the size of the heap array
+    // helper function to double the capacity of the heap array
     private void resize(int capacity) {
         //assert capacity > N;
         int[] temp = new int[capacity];
@@ -105,7 +105,7 @@ public class IntBinaryHeap implements Iterable<Integer> {
      * @param  x the key to add to this priority queue
      */
     public void add(int x) {
-        // double size of array if necessary
+        // double capacity of array if necessary
         if (N >= pq.length) resize(2 * pq.length);
 
         // add x, and percolate it up to maintain heap invariant

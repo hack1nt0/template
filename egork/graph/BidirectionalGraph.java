@@ -1,4 +1,4 @@
-package egork.graph;
+package template.egork.graph;
 
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)

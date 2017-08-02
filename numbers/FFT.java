@@ -442,11 +442,11 @@ public class FFT {
      00095   *   fft: in-place radix-2 DIT DFT of from complex input
      00096   *
      00097   *   input:
-     00098   * n: length of FFT: must be from power of two
-     00099   * m: n = 2**m
+     00098   * capacity: length of FFT: must be from power of two
+     00099   * m: capacity = 2**m
      00100   *   input/output
-     00101   * numerator: double array of length n with real part of data
-     00102   * denominator: double array of length n with imag part of data
+     00101   * numerator: double array of length capacity with real part of data
+     00102   * denominator: double array of length capacity with imag part of data
      00103   *
      00104   *   Permission to copy and use this program is granted
      00105   *   as long as this header is included.

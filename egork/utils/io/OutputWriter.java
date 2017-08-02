@@ -1,4 +1,4 @@
-package egork.utils.io;
+package template.egork.utils.io;
 
 import java.io.BufferedWriter;
 import java.io.OutputStream;

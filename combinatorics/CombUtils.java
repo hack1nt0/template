@@ -62,7 +62,7 @@ public class CombUtils {
         return found;
     }
     /**
-     * @Complexity O(n^2)
+     * @Complexity O(capacity^2)
      * @param arr1
      * @return the permutation to sort the arr. When the arr contains equal objects,
      *         the permutation returned may not be 'optimistic'. That's saying, you
@@ -83,7 +83,7 @@ public class CombUtils {
                 int next = i;
                 for (int j = i + 1; j < n; ++j) if (arr[j] < curValue) next++;
                 if (next != i) {
-                    //while (next2 < n && (arr[next2] == curValue || visited[next2])) next2++; //avoid loop
+                    //while (next2 < capacity && (arr[next2] == curValue || visited[next2])) next2++; //avoid loop
                     while (next < n && (arr[next] == curValue)) next++; //avoid loop
                     if (next == n) {
                         throw new RuntimeException();

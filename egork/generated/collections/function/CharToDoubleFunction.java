@@ -1,4 +1,4 @@
-package egork.generated.collections.function;
+package template.egork.generated.collections.function;
 
 /**
  * @author Egor Kulikov

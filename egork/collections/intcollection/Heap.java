@@ -1,8 +1,8 @@
-package egork.collections.intcollection;
+package template.egork.collections.intcollection;
 
-import egork.generated.collections.comparator.IntComparator;
-import egork.generated.collections.iterator.IntIterator;
-import egork.generated.collections.queue.IntQueue;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.generated.collections.iterator.IntIterator;
+import template.egork.generated.collections.queue.IntQueue;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;
@@ -55,7 +55,7 @@ public class Heap implements IntQueue {
     }
 
     public void shiftUp(int index) {
-        //		if (index < 0 || index >= size)
+        //		if (index < 0 || index >= capacity)
         //			throw new IllegalArgumentException();
         int value = elements[index];
         while (index != 0) {

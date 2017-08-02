@@ -1,6 +1,6 @@
-package egork.collections.intervaltree;
+package template.egork.collections.intervaltree;
 
-import egork.graph.Graph;
+import template.egork.graph.Graph;
 
 import java.util.Arrays;
 

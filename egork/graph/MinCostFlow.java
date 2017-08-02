@@ -1,9 +1,9 @@
-package egork.graph;
+package template.egork.graph;
 
-import egork.collections.Pair;
-import egork.collections.intcollection.Heap;
-import egork.generated.collections.comparator.IntComparator;
-import egork.numbers.IntegerUtils;
+import template.egork.collections.Pair;
+import template.egork.collections.intcollection.Heap;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.numbers.IntegerUtils;
 
 import java.util.Arrays;
 

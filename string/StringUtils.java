@@ -1,17 +1,12 @@
 package template.string;
 
+import template.collection.CollectionUtils;
 import template.collection.tuple.Tuple2;
-import template.debug.RandomUtils;
-
 import java.util.*;
-
-import static template.debug.Stopwatch.*;
-
 
 /**
  * Created by dy on 17-1-11.
  *
- * the sorted
  */
 public class StringUtils {
 
@@ -134,6 +129,25 @@ public class StringUtils {
         if (!ita.hasNext() && !itb.hasNext()) return 0;
         return ita.hasNext() ? +1 : -1;
     }
+
+    public List<Integer> toCodePoints(CharSequence string) {
+        List<Integer> codes = new ArrayList<>();
+        for (int i = 0; i < string.length(); ++i) {
+            char c = string.charAt(i);
+            if (Character.isHighSurrogate(c)) {
+                codes.add(Character.toCodePoint(c, string.charAt(i + 1)));
+                i++;
+            } else {
+                codes.add((int) c);
+            }
+        }
+        return codes;
+    }
+
+    public String fromCodePoints(List<Integer> codePoints) {
+        return new String(CollectionUtils.toIntArray(codePoints), 0, codePoints.size());
+    }
+
 
     /** Unit Tests **/
     public static void main(String[] args) {

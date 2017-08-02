@@ -1,4 +1,4 @@
-package egork.collections.iss;
+package template.egork.collections.iss;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

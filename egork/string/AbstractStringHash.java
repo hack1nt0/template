@@ -1,6 +1,6 @@
-package egork.string;
+package template.egork.string;
 
-import egork.numbers.IntegerUtils;
+import template.egork.numbers.IntegerUtils;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package egork.collections;
+package template.egork.collections;
 
 import java.util.Iterator;
 

@@ -1,6 +1,6 @@
-package egork.generated.collections.set;
+package template.egork.generated.collections.set;
 
-import egork.generated.collections.CharCollection;
+import template.egork.generated.collections.CharCollection;
 
 public interface CharSet extends CharCollection {
     @Override

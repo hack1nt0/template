@@ -1,12 +1,12 @@
-package egork.misc;
+package template.egork.misc;
 
-import egork.collections.FenwickTree;
-import egork.generated.collections.comparator.IntComparator;
-import egork.generated.collections.list.DoubleArray;
-import egork.generated.collections.list.IntArray;
-import egork.collections.intcollection.Range;
-import egork.generated.collections.list.CharArray;
-import egork.generated.collections.list.LongArray;
+import template.egork.collections.FenwickTree;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.generated.collections.list.DoubleArray;
+import template.egork.generated.collections.list.IntArray;
+import template.egork.collections.intcollection.Range;
+import template.egork.generated.collections.list.CharArray;
+import template.egork.generated.collections.list.LongArray;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

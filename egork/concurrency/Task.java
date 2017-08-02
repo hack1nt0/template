@@ -1,7 +1,7 @@
-package egork.concurrency;
+package template.egork.concurrency;
 
-import egork.utils.io.OutputWriter;
-import egork.utils.io.InputReader;
+import template.egork.utils.io.OutputWriter;
+import template.egork.utils.io.InputReader;
 
 /**
  * @author egor@net.egork.net

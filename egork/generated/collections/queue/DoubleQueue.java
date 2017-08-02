@@ -1,6 +1,6 @@
-package egork.generated.collections.queue;
+package template.egork.generated.collections.queue;
 
-import egork.generated.collections.DoubleCollection;
+import template.egork.generated.collections.DoubleCollection;
 
 public interface DoubleQueue extends DoubleCollection {
     default public double first() {

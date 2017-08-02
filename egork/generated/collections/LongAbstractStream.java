@@ -1,6 +1,6 @@
-package egork.generated.collections;
+package template.egork.generated.collections;
 
-import egork.generated.collections.iterator.LongIterator;
+import template.egork.generated.collections.iterator.LongIterator;
 
 public abstract class LongAbstractStream implements LongStream {
     //base

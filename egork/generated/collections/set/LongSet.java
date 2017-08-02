@@ -1,6 +1,6 @@
-package egork.generated.collections.set;
+package template.egork.generated.collections.set;
 
-import egork.generated.collections.LongCollection;
+import template.egork.generated.collections.LongCollection;
 
 public interface LongSet extends LongCollection {
     @Override

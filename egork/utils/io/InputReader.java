@@ -1,4 +1,4 @@
-package egork.utils.io;
+package template.egork.utils.io;
 
 import java.io.IOException;
 import java.io.InputStream;

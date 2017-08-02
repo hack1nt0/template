@@ -183,12 +183,12 @@ public class EArrayList<T> extends AbstractList<T> {
 
     //Copied from java.util.Spliterators
     /**
-     * A Spliterator.OfInt designed for use by sources that traverse and split
+     * A Spliterator.OfInt designed for use by sources that traverse and split0
      * elements maintained in an unmodifiable {@code int[]} array.
      */
     static final class IntCyclicArraySpliterator implements Spliterator.OfInt {
         private final int[] array;
-        private int from;        // current from, modified on advance/split
+        private int from;        // current from, modified on advance/split0
         private int size;  // one past last from
         private static final int characteristics = Spliterator.ORDERED | Spliterator.IMMUTABLE | Spliterator.SIZED | Spliterator.SUBSIZED;
 

@@ -5,14 +5,14 @@ import org.openjdk.jol.vm.VM;
 import template.collection.sequence.ArrayUtils;
 
 import java.io.PrintWriter;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created by dy on 17-1-20.
  */
 public class MemoryMeasurer {
+    Deque<Long> stack = new ArrayDeque<>();
+    boolean TURN_ON = false;
 
     public static void main(String[] args) {
         testJOL();
@@ -48,5 +48,19 @@ public class MemoryMeasurer {
         }
 
         pw.close();
+    }
+
+    public void start() {
+        if (TURN_ON) {
+            System.gc();
+            stack.push(Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory());
+        }
+    }
+
+    public void stop() {
+        if (TURN_ON) {
+            long used = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory() - stack.pop();
+            System.err.println(used / 1024. / 1024 + "MB");
+        }
     }
 }

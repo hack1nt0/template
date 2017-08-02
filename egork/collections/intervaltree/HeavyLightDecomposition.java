@@ -1,4 +1,4 @@
-package egork.collections.intervaltree;//package net.net.egork.collections.intervaltree;
+package template.egork.collections.intervaltree;//package net.net.egork.collections.intervaltree;
 //
 //import java.util.ArrayList;
 //import java.util.Arrays;
@@ -90,7 +90,7 @@ package egork.collections.intervaltree;//package net.net.egork.collections.inter
 //                list.add(current);
 //                current = heavyChild[current];
 //            }
-//            SimpleIntervalTree<V, D> currentTree = new SimpleIntervalTree<V, D>(list.size()) {
+//            SimpleIntervalTree<V, D> currentTree = new SimpleIntervalTree<V, D>(list.capacity()) {
 //                @Override
 //                protected V joinValue(V left, V right) {
 //                    return HeavyLightDecomposition.this.joinValue(left, right);
@@ -117,7 +117,7 @@ package egork.collections.intervaltree;//package net.net.egork.collections.inter
 //                }
 //            };
 //            currentTree.init();
-//            for (int i = 0; i < list.size(); i++) {
+//            for (int i = 0; i < list.capacity(); i++) {
 //                tree[list.get(i)] = currentTree;
 //                indexInTree[list.get(i)] = i;
 //                parent[list.get(i)] = last;

@@ -1,14 +1,14 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.IntReversableCollection;
-import egork.generated.collections.comparator.IntComparator;
-import egork.generated.collections.iterator.IntIterator;
-import egork.generated.collections.function.IntCharPredicate;
-import egork.generated.collections.function.IntDoublePredicate;
-import egork.generated.collections.function.IntFilter;
-import egork.generated.collections.function.IntIntPredicate;
-import egork.generated.collections.function.IntLongPredicate;
-import egork.generated.collections.function.IntToIntFunction;
+import template.egork.generated.collections.IntReversableCollection;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.generated.collections.iterator.IntIterator;
+import template.egork.generated.collections.function.IntCharPredicate;
+import template.egork.generated.collections.function.IntDoublePredicate;
+import template.egork.generated.collections.function.IntFilter;
+import template.egork.generated.collections.function.IntIntPredicate;
+import template.egork.generated.collections.function.IntLongPredicate;
+import template.egork.generated.collections.function.IntToIntFunction;
 
 /**
  * @author Egor Kulikov
@@ -442,7 +442,7 @@ public interface IntList extends IntReversableCollection {
 
             {
                 if (from < 0 || from > to || to > IntList.this.size()) {
-                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", size = " + size());
+                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", capacity = " + size());
                 }
                 shift = from;
                 size = to - from;
@@ -454,7 +454,7 @@ public interface IntList extends IntReversableCollection {
 
             public int get(int at) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 return IntList.this.get(at + shift);
             }
@@ -469,7 +469,7 @@ public interface IntList extends IntReversableCollection {
 
             public void set(int at, int value) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 IntList.this.set(at + shift, value);
             }

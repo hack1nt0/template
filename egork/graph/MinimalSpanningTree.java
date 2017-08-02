@@ -1,12 +1,12 @@
-package egork.graph;
+package template.egork.graph;
 
-import egork.collections.iss.IndependentSetSystem;
-import egork.collections.iss.RecursiveIndependentSetSystem;
-import egork.generated.collections.comparator.IntComparator;
-import egork.generated.collections.set.IntHashSet;
-import egork.generated.collections.set.IntSet;
-import egork.misc.ArrayUtils;
-import egork.numbers.IntegerUtils;
+import template.egork.collections.iss.IndependentSetSystem;
+import template.egork.collections.iss.RecursiveIndependentSetSystem;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.generated.collections.set.IntHashSet;
+import template.egork.generated.collections.set.IntSet;
+import template.egork.misc.ArrayUtils;
+import template.egork.numbers.IntegerUtils;
 
 /**
  * @author egorku@yandex-team.ru

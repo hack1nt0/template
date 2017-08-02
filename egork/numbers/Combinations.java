@@ -1,7 +1,4 @@
-package egork.numbers;
-
-import static egork.numbers.IntegerUtils.generateFactorial;
-import static egork.numbers.IntegerUtils.generateReverseFactorials;
+package template.egork.numbers;
 
 /**
  * @author egor@net.egork.net
@@ -13,8 +10,8 @@ public class Combinations {
 
     public Combinations(int length, long mod) {
         this.mod = mod;
-        factorial = generateFactorial(length, mod);
-        reverseFactorial = generateReverseFactorials(length, mod);
+        factorial = IntegerUtils.generateFactorial(length, mod);
+        reverseFactorial = IntegerUtils.generateReverseFactorials(length, mod);
     }
 
     public long c(int n, int k) {

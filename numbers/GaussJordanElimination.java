@@ -35,7 +35,7 @@
 
 package template.numbers;
 
-import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.algs4.StdOut;
 import template.debug.RandomUtils;
 
 /**

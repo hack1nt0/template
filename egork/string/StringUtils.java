@@ -1,4 +1,4 @@
-package egork.string;
+package template.egork.string;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package egork.graph;
+package template.egork.graph;
 
 /**
  * @author egorku@yandex-team.ru

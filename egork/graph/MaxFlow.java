@@ -1,7 +1,7 @@
-package egork.graph;
+package template.egork.graph;
 
-import egork.generated.collections.queue.IntArrayQueue;
-import egork.generated.collections.queue.IntQueue;
+import template.egork.generated.collections.queue.IntArrayQueue;
+import template.egork.generated.collections.queue.IntQueue;
 
 import java.util.Arrays;
 

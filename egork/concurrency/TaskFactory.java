@@ -1,4 +1,4 @@
-package egork.concurrency;
+package template.egork.concurrency;
 
 /**
  * @author egor@net.egork.net

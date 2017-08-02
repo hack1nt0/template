@@ -1,6 +1,6 @@
-package egork.geometry;
+package template.egork.geometry;
 
-import egork.utils.io.InputReader;
+import template.egork.utils.io.InputReader;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

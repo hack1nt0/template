@@ -1,4 +1,4 @@
-package egork.collections.filter;
+package template.egork.collections.filter;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

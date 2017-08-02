@@ -1,4 +1,4 @@
-package egork.collections.intervaltree;
+package template.egork.collections.intervaltree;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

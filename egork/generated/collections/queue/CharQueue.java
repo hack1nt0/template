@@ -1,6 +1,6 @@
-package egork.generated.collections.queue;
+package template.egork.generated.collections.queue;
 
-import egork.generated.collections.CharCollection;
+import template.egork.generated.collections.CharCollection;
 
 public interface CharQueue extends CharCollection {
     default public char first() {

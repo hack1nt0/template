@@ -1,6 +1,6 @@
 package template.collection;
 
-import concurrency.TaskScheduler;
+import template.concurrency.TaskScheduler;
 import template.debug.RandomUtils;
 import template.debug.Stopwatch;
 import template.misc.IntComparator;
@@ -16,7 +16,7 @@ import java.util.function.IntUnaryOperator;
  */
 public class Sorter {
     private static final int CUTOFF        =  15;   // cutoff for insertion sort
-    private static final int R             = Character.MAX_VALUE + 1;   // extended ASCII alphabet size
+    private static final int R             = Character.MAX_VALUE + 1;   // extended ASCII alphabet capacity
 
     /* Sort */
     public <T extends Comparable<T>> List<T> sort(Iterable<T> iterable, Comparator<T> comparator) {
@@ -35,14 +35,14 @@ public class Sorter {
 
     /**
      * Way-3 partition of MSD
-     * Complexity: O(nm), n means num of sorted strs, m means max size of sorted strs.
+     * Complexity: O(nm), capacity means num of sorted strs, m means max capacity of sorted strs.
      * while so, it only occur in the situation of many strs are of equal ones(or at least common long-same-prefix).
-     * Its amortized complexity is O(nlg_3^n)
+     * Its amortized complexity is O(nlg_3^capacity)
      * More, it can be optimized by insertion sort.
      * In practice, sortMSDWay3 will be faster than sortMSD, because of dynamic space allocation of count array of sortMSD.
      * And also, it is faster than Arrays.sort for most cases.
      *
-     * Space: O(m), (the stack space), m means max size of sorted strs.
+     * Space: O(m), (the stack space), m means max capacity of sorted strs.
      * @param stringList strings to sort
      */
     private static void sortMSDWay3(List<CharSequence> stringList, int lo, int hi, int d) {
@@ -192,7 +192,7 @@ public class Sorter {
 
 
     /**
-     * @complexity O(n^2) and stable
+     * @complexity O(capacity^2) and stable
      * @param arr
      * @param from
      * @param to
@@ -215,8 +215,8 @@ public class Sorter {
      *  @author Robert Sedgewick
      *  @author Kevin Wayne
      * Least Significant Digit(LSD).
-     * Complexity: O(nm), n means num of sorted strs, m means max size of sorted strs.
-     * Space: O(n + w), w means radical of char of sorted strs.
+     * Complexity: O(nm), capacity means num of sorted strs, m means max capacity of sorted strs.
+     * Space: O(capacity + w), w means radical of char of sorted strs.
      * @param ss strings to sort
      */
     public static void sortLSD(String[] ss) {
@@ -257,13 +257,13 @@ public class Sorter {
      *  @author Robert Sedgewick
      *  @author Kevin Wayne
      * Most Significant Digit(MSD).
-     * Complexity: O(nm), n means num of sorted strs, m means max size of sorted strs.
+     * Complexity: O(nm), capacity means num of sorted strs, m means max capacity of sorted strs.
      * while so, it only occur in the situation of many strs are of equal ones(or at least common long-same-prefix).
-     * Its amortized complexity is O(nlg_w^n), w means radical of char of sorted strs.
+     * Its amortized complexity is O(nlg_w^capacity), w means radical of char of sorted strs.
      * More, it can be optimized by insertion sort.
      * In practice, sortMSD will be much faster than sortLSD, but slower than Arrays.sort
      *
-     * Space: O(n + w), w means radical of char of sorted strs.
+     * Space: O(capacity + w), w means radical of char of sorted strs.
      * @param ss strings to sort
      */
     public static void sortMSD(List<CharSequence> ss) {

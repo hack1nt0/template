@@ -1,4 +1,4 @@
-package egork.generated.collections.iterator;
+package template.egork.generated.collections.iterator;
 
 import java.util.NoSuchElementException;
 

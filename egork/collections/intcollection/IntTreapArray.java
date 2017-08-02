@@ -1,8 +1,8 @@
-package egork.collections.intcollection;
+package template.egork.collections.intcollection;
 
-import egork.generated.collections.list.IntList;
-import egork.generated.collections.pair.IntIntPair;
-import egork.generated.collections.IntAbstractStream;
+import template.egork.generated.collections.list.IntList;
+import template.egork.generated.collections.pair.IntIntPair;
+import template.egork.generated.collections.IntAbstractStream;
 
 import java.util.Arrays;
 import java.util.Random;

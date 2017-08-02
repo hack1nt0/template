@@ -1,7 +1,7 @@
-package egork.collections;
+package template.egork.collections;
 
-import egork.generated.collections.comparator.IntComparator;
-import egork.misc.ArrayUtils;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.misc.ArrayUtils;
 
 /**
  * @author egor@net.egork.net

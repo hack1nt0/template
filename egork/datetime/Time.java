@@ -1,6 +1,6 @@
-package egork.datetime;
+package template.egork.datetime;
 
-import egork.numbers.IntegerUtils;
+import template.egork.numbers.IntegerUtils;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

@@ -1,8 +1,8 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.CharAbstractStream;
-import egork.generated.collections.CharCollection;
-import egork.generated.collections.CharStream;
+import template.egork.generated.collections.CharAbstractStream;
+import template.egork.generated.collections.CharCollection;
+import template.egork.generated.collections.CharStream;
 
 import java.util.Arrays;
 
@@ -47,7 +47,7 @@ public class CharArrayList extends CharAbstractStream implements CharList {
 
     public char get(int at) {
         if (at >= size) {
-            throw new IndexOutOfBoundsException("at = " + at + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size);
         }
         return data[at];
     }
@@ -63,7 +63,7 @@ public class CharArrayList extends CharAbstractStream implements CharList {
     public void addAt(int index, char value) {
         ensureCapacity(size + 1);
         if (index > size || index < 0) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         if (index != size) {
             System.arraycopy(data, index, data, index + 1, size - index);
@@ -74,7 +74,7 @@ public class CharArrayList extends CharAbstractStream implements CharList {
 
     public void removeAt(int index) {
         if (index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         if (index != size - 1) {
             System.arraycopy(data, index + 1, data, index, size - index - 1);
@@ -84,7 +84,7 @@ public class CharArrayList extends CharAbstractStream implements CharList {
 
     public void set(int index, char value) {
         if (index >= size) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         data[index] = value;
     }

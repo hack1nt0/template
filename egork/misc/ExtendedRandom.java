@@ -1,4 +1,4 @@
-package egork.misc;
+package template.egork.misc;
 
 import java.util.Random;
 

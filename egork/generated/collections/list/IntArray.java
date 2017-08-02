@@ -1,6 +1,6 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.IntAbstractStream;
+import template.egork.generated.collections.IntAbstractStream;
 
 public class IntArray extends IntAbstractStream implements IntList {
     private int[] data;

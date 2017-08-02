@@ -1,8 +1,8 @@
-package egork.generated.collections.queue;
+package template.egork.generated.collections.queue;
 
-import egork.generated.collections.DoubleCollection;
-import egork.generated.collections.DoubleStream;
-import egork.generated.collections.iterator.DoubleIterator;
+import template.egork.generated.collections.DoubleCollection;
+import template.egork.generated.collections.DoubleStream;
+import template.egork.generated.collections.iterator.DoubleIterator;
 
 import java.util.NoSuchElementException;
 

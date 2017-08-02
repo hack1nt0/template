@@ -1,4 +1,4 @@
-package egork.misc;
+package template.egork.misc;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

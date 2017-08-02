@@ -25,11 +25,7 @@
 
 package template.string;
 
-import edu.princeton.cs.algorithms.Bag;
-import edu.princeton.cs.algorithms.Digraph;
-import edu.princeton.cs.algorithms.DirectedDFS;
-import edu.princeton.cs.algorithms.Stack;
-import edu.princeton.cs.introcs.StdOut;
+import edu.princeton.cs.algs4.*;
 
 import java.util.Iterator;
 import java.util.List;

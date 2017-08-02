@@ -1,4 +1,4 @@
-package egork.misc;
+package template.egork.misc;
 
 /**
  * @author egorku@yandex-team.ru

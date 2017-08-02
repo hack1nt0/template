@@ -1,6 +1,6 @@
-package egork.collections.map;
+package template.egork.collections.map;
 
-import egork.misc.Factory;
+import template.egork.misc.Factory;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

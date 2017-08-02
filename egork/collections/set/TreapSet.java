@@ -1,4 +1,4 @@
-package egork.collections.set;
+package template.egork.collections.set;
 
 import java.util.ArrayList;
 import java.util.Collection;

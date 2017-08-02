@@ -1,14 +1,14 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.DoubleReversableCollection;
-import egork.generated.collections.comparator.DoubleComparator;
-import egork.generated.collections.iterator.DoubleIterator;
-import egork.generated.collections.function.DoubleCharPredicate;
-import egork.generated.collections.function.DoubleDoublePredicate;
-import egork.generated.collections.function.DoubleFilter;
-import egork.generated.collections.function.DoubleIntPredicate;
-import egork.generated.collections.function.DoubleLongPredicate;
-import egork.generated.collections.function.IntToDoubleFunction;
+import template.egork.generated.collections.DoubleReversableCollection;
+import template.egork.generated.collections.comparator.DoubleComparator;
+import template.egork.generated.collections.iterator.DoubleIterator;
+import template.egork.generated.collections.function.DoubleCharPredicate;
+import template.egork.generated.collections.function.DoubleDoublePredicate;
+import template.egork.generated.collections.function.DoubleFilter;
+import template.egork.generated.collections.function.DoubleIntPredicate;
+import template.egork.generated.collections.function.DoubleLongPredicate;
+import template.egork.generated.collections.function.IntToDoubleFunction;
 
 /**
  * @author Egor Kulikov
@@ -442,7 +442,7 @@ public interface DoubleList extends DoubleReversableCollection {
 
             {
                 if (from < 0 || from > to || to > DoubleList.this.size()) {
-                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", size = " + size());
+                    throw new IndexOutOfBoundsException("from = " + from + ", to = " + to + ", capacity = " + size());
                 }
                 shift = from;
                 size = to - from;
@@ -454,7 +454,7 @@ public interface DoubleList extends DoubleReversableCollection {
 
             public double get(int at) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 return DoubleList.this.get(at + shift);
             }
@@ -469,7 +469,7 @@ public interface DoubleList extends DoubleReversableCollection {
 
             public void set(int at, double value) {
                 if (at < 0 || at >= size) {
-                    throw new IndexOutOfBoundsException("at = " + at + ", size = " + size());
+                    throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size());
                 }
                 DoubleList.this.set(at + shift, value);
             }

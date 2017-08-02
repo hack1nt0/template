@@ -75,7 +75,7 @@ public class BitUtils {
         return ret;
     }
 
-    //0 <= k <= n <= 64
+    //0 <= k <= capacity <= 64
     public static List<Long> kSubset(long n, int k) {
         List<Long> ret = new ArrayList<Long>();
         if (k == 0) return ret;

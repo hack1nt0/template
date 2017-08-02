@@ -1,6 +1,6 @@
-package egork.generated.collections;
+package template.egork.generated.collections;
 
-import egork.generated.collections.iterator.CharIterator;
+import template.egork.generated.collections.iterator.CharIterator;
 
 public interface CharReversableCollection extends CharCollection {
     //abstract

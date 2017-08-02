@@ -1,6 +1,6 @@
-package egork.collections.map;
+package template.egork.collections.map;
 
-import egork.misc.Factory;
+import template.egork.misc.Factory;
 
 import java.util.TreeMap;
 

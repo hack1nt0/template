@@ -1,8 +1,8 @@
-package egork.collections.intcollection;
+package template.egork.collections.intcollection;
 
-import egork.generated.collections.set.IntSet;
-import egork.generated.collections.comparator.IntComparator;
-import egork.generated.collections.iterator.IntIterator;
+import template.egork.generated.collections.set.IntSet;
+import template.egork.generated.collections.comparator.IntComparator;
+import template.egork.generated.collections.iterator.IntIterator;
 
 import java.util.Arrays;
 import java.util.NoSuchElementException;

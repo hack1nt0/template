@@ -1,6 +1,6 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.CharAbstractStream;
+import template.egork.generated.collections.CharAbstractStream;
 
 public class CharArray extends CharAbstractStream implements CharList {
     private char[] data;

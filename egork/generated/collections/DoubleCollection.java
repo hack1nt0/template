@@ -1,6 +1,6 @@
-package egork.generated.collections;
+package template.egork.generated.collections;
 
-import egork.generated.collections.iterator.DoubleIterator;
+import template.egork.generated.collections.iterator.DoubleIterator;
 
 /**
  * @author Egor Kulikov

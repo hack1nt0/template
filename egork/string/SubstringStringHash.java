@@ -1,4 +1,4 @@
-package egork.string;
+package template.egork.string;
 
 /**
  * @author Egor Kulikov (egor@net.egork.net)

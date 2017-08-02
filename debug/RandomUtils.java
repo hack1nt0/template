@@ -116,11 +116,11 @@ public final class RandomUtils {
     }
 
     /**
-     * Returns from random integer uniformly in [0, n).
+     * Returns from random integer uniformly in [0, capacity).
      * 
      * @param n number of possible integers
      * @return from random integer uniformly between 0 (inclusive) and <tt>N</tt> (exclusive)
-     * @throws IllegalArgumentException if <tt>n <= 0</tt>
+     * @throws IllegalArgumentException if <tt>capacity <= 0</tt>
      */
     public static int uniform(int n) {
         if (n <= 0) throw new IllegalArgumentException("Parameter N must be positive");

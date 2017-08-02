@@ -1,8 +1,8 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.DoubleAbstractStream;
-import egork.generated.collections.DoubleCollection;
-import egork.generated.collections.DoubleStream;
+import template.egork.generated.collections.DoubleAbstractStream;
+import template.egork.generated.collections.DoubleCollection;
+import template.egork.generated.collections.DoubleStream;
 
 import java.util.Arrays;
 
@@ -47,7 +47,7 @@ public class DoubleArrayList extends DoubleAbstractStream implements DoubleList 
 
     public double get(int at) {
         if (at >= size) {
-            throw new IndexOutOfBoundsException("at = " + at + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size);
         }
         return data[at];
     }
@@ -63,7 +63,7 @@ public class DoubleArrayList extends DoubleAbstractStream implements DoubleList 
     public void addAt(int index, double value) {
         ensureCapacity(size + 1);
         if (index > size || index < 0) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         if (index != size) {
             System.arraycopy(data, index, data, index + 1, size - index);
@@ -74,7 +74,7 @@ public class DoubleArrayList extends DoubleAbstractStream implements DoubleList 
 
     public void removeAt(int index) {
         if (index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         if (index != size - 1) {
             System.arraycopy(data, index + 1, data, index, size - index - 1);
@@ -84,7 +84,7 @@ public class DoubleArrayList extends DoubleAbstractStream implements DoubleList 
 
     public void set(int index, double value) {
         if (index >= size) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         data[index] = value;
     }

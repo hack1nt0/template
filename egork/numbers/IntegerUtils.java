@@ -1,10 +1,10 @@
-package egork.numbers;
+package template.egork.numbers;
 
-import egork.generated.collections.list.IntArrayList;
-import egork.generated.collections.pair.LongIntPair;
-import egork.generated.collections.list.IntList;
-import egork.generated.collections.list.LongArrayList;
-import egork.generated.collections.list.LongList;
+import template.egork.generated.collections.list.IntArrayList;
+import template.egork.generated.collections.pair.LongIntPair;
+import template.egork.generated.collections.list.IntList;
+import template.egork.generated.collections.list.LongArrayList;
+import template.egork.generated.collections.list.LongList;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

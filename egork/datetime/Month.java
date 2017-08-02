@@ -1,4 +1,4 @@
-package egork.datetime;
+package template.egork.datetime;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

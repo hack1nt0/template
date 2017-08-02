@@ -1,4 +1,4 @@
-package egork.graph;
+package template.egork.graph;
 
 import java.util.Arrays;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package egork.generated.collections.hashing;
+package template.egork.generated.collections.hashing;
 
 /**
  * @author egor@net.egork.net

@@ -1,8 +1,8 @@
-package egork.graph;
+package template.egork.graph;
 
-import egork.collections.Pair;
-import egork.generated.collections.set.IntSet;
-import egork.generated.collections.set.IntHashSet;
+import template.egork.collections.Pair;
+import template.egork.generated.collections.set.IntSet;
+import template.egork.generated.collections.set.IntHashSet;
 
 import java.util.Arrays;
 

@@ -1,8 +1,8 @@
-package egork.collections.iss;
+package template.egork.collections.iss;
 
-import egork.generated.collections.function.IntTask;
-import egork.generated.collections.list.IntArrayList;
-import egork.generated.collections.list.IntList;
+import template.egork.generated.collections.function.IntTask;
+import template.egork.generated.collections.list.IntArrayList;
+import template.egork.generated.collections.list.IntList;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

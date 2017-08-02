@@ -1,4 +1,4 @@
-package egork.numbers;
+package template.egork.numbers;
 
 /**
  * @author Egor Kulikov (egorku@yandex-team.ru)

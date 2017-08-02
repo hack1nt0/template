@@ -1,4 +1,4 @@
-package egork.geometry;
+package template.egork.geometry;
 
 /**
  * @author Egor Kulikov (egor@net.egork.net)

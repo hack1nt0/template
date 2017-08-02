@@ -1,7 +1,7 @@
-package egork.collections.intcollection;
+package template.egork.collections.intcollection;
 
-import egork.generated.collections.list.IntArray;
-import egork.generated.collections.list.IntList;
+import template.egork.generated.collections.list.IntArray;
+import template.egork.generated.collections.list.IntList;
 
 /**
  * @author egor@net.egork.net

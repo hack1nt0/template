@@ -1,6 +1,6 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.DoubleAbstractStream;
+import template.egork.generated.collections.DoubleAbstractStream;
 
 public class DoubleArray extends DoubleAbstractStream implements DoubleList {
     private double[] data;

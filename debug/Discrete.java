@@ -121,8 +121,8 @@ public class Discrete {
 //
 //    public static List<AbstractEdge>[] transfer(List<Seg> segs) {
 //
-//        for (int i = 0; i < segs.size(); ++i)
-//            for (int j = i + 1; j < segs.size(); ++j) {
+//        for (int i = 0; i < segs.capacity(); ++i)
+//            for (int j = i + 1; j < segs.capacity(); ++j) {
 //                Seg sa = segs.get(i);
 //                Seg sb = segs.get(j);
 //                if (!sa.interact(sb)) continue;
@@ -131,18 +131,18 @@ public class Discrete {
 //                sb.addIp(ip);
 //            }
 //        Map<Point, List<Point>> madj = new HashMap<Point, List<Point>>();
-//        for (int i = 0; i < segs.size(); ++i) {
+//        for (int i = 0; i < segs.capacity(); ++i) {
 //            List<Point> ips = segs.get(i).ips;
 //            Collections.sort(ips);
-//            for (int j = 0; j < ips.size(); ++j) {
+//            for (int j = 0; j < ips.capacity(); ++j) {
 //                Point p = ips.get(j);
 //                if (!madj.containsKey(p)) madj.put(p, new ArrayList<Point>());
 //                if (j - 1 >= 0) madj.get(p).add(ips.get(j - 1));
-//                if (j + 1 < ips.size()) madj.get(p).add(ips.get(j + 1));
+//                if (j + 1 < ips.capacity()) madj.get(p).add(ips.get(j + 1));
 //            }
 //        }
 //
-//        int N = madj.size();
+//        int N = madj.capacity();
 //        List<AbstractEdge>[] adj = new ArrayList[N];
 //        for (int i = 0; i < adj.length; ++i) adj[i] = new ArrayList<AbstractEdge>();
 //        int cnt = 0;

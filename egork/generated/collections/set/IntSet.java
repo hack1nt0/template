@@ -1,6 +1,6 @@
-package egork.generated.collections.set;
+package template.egork.generated.collections.set;
 
-import egork.generated.collections.IntCollection;
+import template.egork.generated.collections.IntCollection;
 
 public interface IntSet extends IntCollection {
     @Override

@@ -1,6 +1,6 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.LongAbstractStream;
+import template.egork.generated.collections.LongAbstractStream;
 
 public class LongArray extends LongAbstractStream implements LongList {
     private long[] data;

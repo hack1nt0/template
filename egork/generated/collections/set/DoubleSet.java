@@ -1,6 +1,6 @@
-package egork.generated.collections.set;
+package template.egork.generated.collections.set;
 
-import egork.generated.collections.DoubleCollection;
+import template.egork.generated.collections.DoubleCollection;
 
 public interface DoubleSet extends DoubleCollection {
     @Override

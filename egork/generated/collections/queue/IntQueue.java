@@ -1,6 +1,6 @@
-package egork.generated.collections.queue;
+package template.egork.generated.collections.queue;
 
-import egork.generated.collections.IntCollection;
+import template.egork.generated.collections.IntCollection;
 
 public interface IntQueue extends IntCollection {
     default public int first() {

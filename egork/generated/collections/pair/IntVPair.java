@@ -1,4 +1,4 @@
-package egork.generated.collections.pair;
+package template.egork.generated.collections.pair;
 
 /**
  * @author Egor Kulikov

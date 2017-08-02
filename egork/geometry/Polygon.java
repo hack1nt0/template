@@ -1,4 +1,4 @@
-package egork.geometry;
+package template.egork.geometry;
 
 import java.util.ArrayList;
 import java.util.Arrays;

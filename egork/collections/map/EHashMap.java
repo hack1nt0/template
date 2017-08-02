@@ -1,4 +1,4 @@
-package egork.collections.map;
+package template.egork.collections.map;
 
 import java.util.AbstractMap;
 import java.util.AbstractSet;

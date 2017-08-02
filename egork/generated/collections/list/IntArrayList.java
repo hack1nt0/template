@@ -1,8 +1,8 @@
-package egork.generated.collections.list;
+package template.egork.generated.collections.list;
 
-import egork.generated.collections.IntStream;
-import egork.generated.collections.IntAbstractStream;
-import egork.generated.collections.IntCollection;
+import template.egork.generated.collections.IntStream;
+import template.egork.generated.collections.IntAbstractStream;
+import template.egork.generated.collections.IntCollection;
 
 import java.util.Arrays;
 
@@ -47,7 +47,7 @@ public class IntArrayList extends IntAbstractStream implements IntList {
 
     public int get(int at) {
         if (at >= size) {
-            throw new IndexOutOfBoundsException("at = " + at + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + at + ", capacity = " + size);
         }
         return data[at];
     }
@@ -63,7 +63,7 @@ public class IntArrayList extends IntAbstractStream implements IntList {
     public void addAt(int index, int value) {
         ensureCapacity(size + 1);
         if (index > size || index < 0) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         if (index != size) {
             System.arraycopy(data, index, data, index + 1, size - index);
@@ -74,7 +74,7 @@ public class IntArrayList extends IntAbstractStream implements IntList {
 
     public void removeAt(int index) {
         if (index >= size || index < 0) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         if (index != size - 1) {
             System.arraycopy(data, index + 1, data, index, size - index - 1);
@@ -84,7 +84,7 @@ public class IntArrayList extends IntAbstractStream implements IntList {
 
     public void set(int index, int value) {
         if (index >= size) {
-            throw new IndexOutOfBoundsException("at = " + index + ", size = " + size);
+            throw new IndexOutOfBoundsException("at = " + index + ", capacity = " + size);
         }
         data[index] = value;
     }

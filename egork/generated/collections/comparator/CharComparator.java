@@ -1,4 +1,4 @@
-package egork.generated.collections.comparator;
+package template.egork.generated.collections.comparator;
 
 /**
  * @author Egor Kulikov

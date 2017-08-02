@@ -1,8 +1,8 @@
-package egork.misc;
+package template.egork.misc;
 
-import egork.generated.collections.function.LongFilter;
-import egork.generated.collections.list.IntArrayList;
-import egork.generated.collections.list.IntList;
+import template.egork.generated.collections.function.LongFilter;
+import template.egork.generated.collections.list.IntArrayList;
+import template.egork.generated.collections.list.IntList;
 
 /**
  * @author Egor Kulikov (kulikov@devexperts.com)

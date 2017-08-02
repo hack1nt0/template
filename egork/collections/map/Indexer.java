@@ -1,4 +1,4 @@
-package egork.collections.map;
+package template.egork.collections.map;
 
 /**
  * @author Egor Kulikov (egor@net.egork.net)

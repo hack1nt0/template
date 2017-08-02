@@ -1,6 +1,6 @@
-package egork.generated.collections.queue;
+package template.egork.generated.collections.queue;
 
-import egork.generated.collections.LongCollection;
+import template.egork.generated.collections.LongCollection;
 
 public interface LongQueue extends LongCollection {
     default public long first() {

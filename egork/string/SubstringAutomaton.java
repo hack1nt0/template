@@ -1,8 +1,8 @@
-package egork.string;
+package template.egork.string;
 
-import egork.collections.map.Counter;
-import egork.collections.map.Indexer;
-import egork.graph.Graph;
+import template.egork.collections.map.Counter;
+import template.egork.collections.map.Indexer;
+import template.egork.graph.Graph;
 
 import java.util.Arrays;
 

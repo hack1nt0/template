@@ -32,8 +32,8 @@
 
 package template.numbers;
 
-import edu.princeton.cs.introcs.StdOut;
-import edu.princeton.cs.introcs.StdRandom;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 import java.util.Random;
 
